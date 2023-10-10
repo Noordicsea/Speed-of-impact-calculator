@@ -53,11 +53,9 @@ int main() {
         Sleep(5000);
         double ax = (0 - ((vxi) * (vxi))) / (2 * (d - 0));
         cout << "The required acceleration to avoid impact is: " << ax << " m/s" << std::endl;
-        // Ask user if they want to continue or exit
         cout << "\nWould you like to continue? Press 'y' to continue or 'n' to exit: ";
         cin >> choice;
-        cin.ignore();  // Clear the buffer
-
+        cin.ignore();
     } while (choice == 'y' || choice == 'Y');
 
     return 0;
